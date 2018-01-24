@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDI.NetCore", "PDI.NetCore\PDI.NetCore.csproj", "{6F9CD966-2DED-4DC2-9A8C-68A5D73D22CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDI.NetCore.Data", "PDI.NetCore.Data\PDI.NetCore.Data.csproj", "{4F307007-937D-4FBE-A7C7-DFB812C8A16F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F9CD966-2DED-4DC2-9A8C-68A5D73D22CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F9CD966-2DED-4DC2-9A8C-68A5D73D22CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F9CD966-2DED-4DC2-9A8C-68A5D73D22CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F9CD966-2DED-4DC2-9A8C-68A5D73D22CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F307007-937D-4FBE-A7C7-DFB812C8A16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F307007-937D-4FBE-A7C7-DFB812C8A16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F307007-937D-4FBE-A7C7-DFB812C8A16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F307007-937D-4FBE-A7C7-DFB812C8A16F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {372838D0-C9B7-40E6-A1BB-0EF0BED0812F}
+	EndGlobalSection
+EndGlobal

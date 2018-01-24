@@ -1,0 +1,194 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>PDI.NetCore.Data</AssemblyName>
+    <RootNamespace>PDI.NetCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\EWSPDIData\Binding\ChildPropertyDescriptor.cs" Link="Binding\ChildPropertyDescriptor.cs" />
+    <Compile Include="..\EWSPDIData\Binding\ChildPropertyTypeDescriptionProvider.cs" Link="Binding\ChildPropertyTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\ChildPropertyTypeDescriptor.cs" Link="Binding\ChildPropertyTypeDescriptor.cs" />
+    <Compile Include="..\EWSPDIData\Binding\ExtendedBindingList.cs" Link="Binding\ExtendedBindingList.cs" />
+    <Compile Include="..\EWSPDIData\Binding\FreeBusyPropertyTypeDescriptionProvider.cs" Link="Binding\FreeBusyPropertyTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\HidePropertyAttribute.cs" Link="Binding\HidePropertyAttribute.cs" />
+    <Compile Include="..\EWSPDIData\Binding\ObservanceRuleTypeDescriptionProvider.cs" Link="Binding\ObservanceRuleTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\PropertyComparer.cs" Link="Binding\PropertyComparer.cs" />
+    <Compile Include="..\EWSPDIData\Binding\VAlarmTypeDescriptionProvider.cs" Link="Binding\VAlarmTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\VCardTypeDescriptionProvider.cs" Link="Binding\VCardTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\VEventTypeDescriptionProvider.cs" Link="Binding\VEventTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\VFreeBusyTypeDescriptionProvider.cs" Link="Binding\VFreeBusyTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\VJournalTypeDescriptionProvider.cs" Link="Binding\VJournalTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\VNoteTypeDescriptionProvider.cs" Link="Binding\VNoteTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\VTimeZoneTypeDescriptionProvider.cs" Link="Binding\VTimeZoneTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\Binding\VToDoTypeDescriptionProvider.cs" Link="Binding\VToDoTypeDescriptionProvider.cs" />
+    <Compile Include="..\EWSPDIData\DateTimeInstance.cs" Link="DateTimeInstance.cs" />
+    <Compile Include="..\EWSPDIData\DateTimeInstanceCollection.cs" Link="DateTimeInstanceCollection.cs" />
+    <Compile Include="..\EWSPDIData\EncodingUtils.cs" Link="EncodingUtils.cs" />
+    <Compile Include="..\EWSPDIData\GlobalSuppressions.cs" Link="GlobalSuppressions.cs" />
+    <Compile Include="..\EWSPDIData\LocalizedResources.cs" Link="LocalizedResources.cs" />
+    <Compile Include="..\EWSPDIData\PDIObject.cs" Link="PDIObject.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\CalendarObject.cs" Link="PDIObjects\CalendarObject.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\ObservanceRule.cs" Link="PDIObjects\ObservanceRule.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\ObservanceRuleCollection.cs" Link="PDIObjects\ObservanceRuleCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\ObservanceRuleType.cs" Link="PDIObjects\ObservanceRuleType.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\RecurringObject.cs" Link="PDIObjects\RecurringObject.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VAlarm.cs" Link="PDIObjects\VAlarm.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VAlarmCollection.cs" Link="PDIObjects\VAlarmCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VCalendar.cs" Link="PDIObjects\VCalendar.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VCard.cs" Link="PDIObjects\VCard.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VCardCollection.cs" Link="PDIObjects\VCardCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VEvent.cs" Link="PDIObjects\VEvent.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VEventCollection.cs" Link="PDIObjects\VEventCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VFreeBusy.cs" Link="PDIObjects\VFreeBusy.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VFreeBusyCollection.cs" Link="PDIObjects\VFreeBusyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VJournal.cs" Link="PDIObjects\VJournal.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VJournalCollection.cs" Link="PDIObjects\VJournalCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VNote.cs" Link="PDIObjects\VNote.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VNoteCollections.cs" Link="PDIObjects\VNoteCollections.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VTimeZone.cs" Link="PDIObjects\VTimeZone.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VTimeZoneCollection.cs" Link="PDIObjects\VTimeZoneCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VToDo.cs" Link="PDIObjects\VToDo.cs" />
+    <Compile Include="..\EWSPDIData\PDIObjects\VToDoCollection.cs" Link="PDIObjects\VToDoCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIParser\NameToValue.cs" Link="PDIParser\NameToValue.cs" />
+    <Compile Include="..\EWSPDIData\PDIParser\ParameterType.cs" Link="PDIParser\ParameterType.cs" />
+    <Compile Include="..\EWSPDIData\PDIParser\PDIParser.cs" Link="PDIParser\PDIParser.cs" />
+    <Compile Include="..\EWSPDIData\PDIParser\PDIParserException.cs" Link="PDIParser\PDIParserException.cs" />
+    <Compile Include="..\EWSPDIData\PDIParser\PropertyType.cs" Link="PDIParser\PropertyType.cs" />
+    <Compile Include="..\EWSPDIData\PDIParser\VCalendarParser.cs" Link="PDIParser\VCalendarParser.cs" />
+    <Compile Include="..\EWSPDIData\PDIParser\VCardParser.cs" Link="PDIParser\VCardParser.cs" />
+    <Compile Include="..\EWSPDIData\PDIParser\VNoteParser.cs" Link="PDIParser\VNoteParser.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ActionProperty.cs" Link="PDIProperties\ActionProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AddressProperty.cs" Link="PDIProperties\AddressProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AddressPropertyCollection.cs" Link="PDIProperties\AddressPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AddressTypes.cs" Link="PDIProperties\AddressTypes.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AgentProperty.cs" Link="PDIProperties\AgentProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AgentPropertyCollection.cs" Link="PDIProperties\AgentPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AlarmAction.cs" Link="PDIProperties\AlarmAction.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AttachProperty.cs" Link="PDIProperties\AttachProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AttachPropertyCollection.cs" Link="PDIProperties\AttachPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AttendeeProperty.cs" Link="PDIProperties\AttendeeProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\AttendeePropertyCollection.cs" Link="PDIProperties\AttendeePropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\BaseAltRepProperty.cs" Link="PDIProperties\BaseAltRepProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\BaseDateTimeProperty.cs" Link="PDIProperties\BaseDateTimeProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\BaseProperty.cs" Link="PDIProperties\BaseProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\BirthDateProperty.cs" Link="PDIProperties\BirthDateProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\BodyProperty.cs" Link="PDIProperties\BodyProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\CalendarMethod.cs" Link="PDIProperties\CalendarMethod.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\CalendarScaleProperty.cs" Link="PDIProperties\CalendarScaleProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\CategoriesProperty.cs" Link="PDIProperties\CategoriesProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\CharSetValue.cs" Link="PDIProperties\CharSetValue.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ClassificationProperty.cs" Link="PDIProperties\ClassificationProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\CommentProperty.cs" Link="PDIProperties\CommentProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\CompletedDateProperty.cs" Link="PDIProperties\CompletedDateProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ContactProperty.cs" Link="PDIProperties\ContactProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ContactPropertyCollection.cs" Link="PDIProperties\ContactPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\CustomProperty.cs" Link="PDIProperties\CustomProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\CustomPropertyCollection.cs" Link="PDIProperties\CustomPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\DateCreatedProperty.cs" Link="PDIProperties\DateCreatedProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\DaylightProperty.cs" Link="PDIProperties\DaylightProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\DescriptionProperty.cs" Link="PDIProperties\DescriptionProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\DueDateProperty.cs" Link="PDIProperties\DueDateProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\DurationProperty.cs" Link="PDIProperties\DurationProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\EMailProperty.cs" Link="PDIProperties\EMailProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\EMailPropertyCollection.cs" Link="PDIProperties\EMailPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\EMailTypes.cs" Link="PDIProperties\EMailTypes.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\EncodingType.cs" Link="PDIProperties\EncodingType.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\EncodingValue.cs" Link="PDIProperties\EncodingValue.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\EndDateProperty.cs" Link="PDIProperties\EndDateProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ExDateProperty.cs" Link="PDIProperties\ExDateProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ExDatePropertyCollection.cs" Link="PDIProperties\ExDatePropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ExRuleProperty.cs" Link="PDIProperties\ExRuleProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\FormattedNameProperty.cs" Link="PDIProperties\FormattedNameProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\FreeBusyProperty.cs" Link="PDIProperties\FreeBusyProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\FreeBusyPropertyCollection.cs" Link="PDIProperties\FreeBusyPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\FreeBusyType.cs" Link="PDIProperties\FreeBusyType.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\GeographicPositionProperty.cs" Link="PDIProperties\GeographicPositionProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\LabelProperty.cs" Link="PDIProperties\LabelProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\LabelPropertyCollection.cs" Link="PDIProperties\LabelPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\LanguageValue.cs" Link="PDIProperties\LanguageValue.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\LastModifiedProperty.cs" Link="PDIProperties\LastModifiedProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\LastRevisionProperty.cs" Link="PDIProperties\LastRevisionProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\LocationProperty.cs" Link="PDIProperties\LocationProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\LogoProperty.cs" Link="PDIProperties\LogoProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\MailerProperty.cs" Link="PDIProperties\MailerProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\MethodProperty.cs" Link="PDIProperties\MethodProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\MimeNameProperty.cs" Link="PDIProperties\MimeNameProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\MimeSourceProperty.cs" Link="PDIProperties\MimeSourceProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\NameProperty.cs" Link="PDIProperties\NameProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\NicknameProperty.cs" Link="PDIProperties\NicknameProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\NoteProperty.cs" Link="PDIProperties\NoteProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\NotePropertyCollection.cs" Link="PDIProperties\NotePropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\OrganizationProperty.cs" Link="PDIProperties\OrganizationProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\OrganizerProperty.cs" Link="PDIProperties\OrganizerProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ParameterNames.cs" Link="PDIProperties\ParameterNames.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\PercentCompleteProperty.cs" Link="PDIProperties\PercentCompleteProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\PhoneTypes.cs" Link="PDIProperties\PhoneTypes.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\PhotoProperty.cs" Link="PDIProperties\PhotoProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\PriorityProperty.cs" Link="PDIProperties\PriorityProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ProductIdProperty.cs" Link="PDIProperties\ProductIdProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\PublicKeyProperty.cs" Link="PDIProperties\PublicKeyProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RDateProperty.cs" Link="PDIProperties\RDateProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RDatePropertyCollection.cs" Link="PDIProperties\RDatePropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RecurrenceCountProperty.cs" Link="PDIProperties\RecurrenceCountProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RecurrenceIdProperty.cs" Link="PDIProperties\RecurrenceIdProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RelatedToProperty.cs" Link="PDIProperties\RelatedToProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RelatedToPropertyCollection.cs" Link="PDIProperties\RelatedToPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RelationshipType.cs" Link="PDIProperties\RelationshipType.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RepeatProperty.cs" Link="PDIProperties\RepeatProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RequestStatusProperty.cs" Link="PDIProperties\RequestStatusProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RequestStatusPropertyCollection.cs" Link="PDIProperties\RequestStatusPropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ResourcesProperty.cs" Link="PDIProperties\ResourcesProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RoleProperty.cs" Link="PDIProperties\RoleProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RRuleProperty.cs" Link="PDIProperties\RRuleProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\RRulePropertyCollection.cs" Link="PDIProperties\RRulePropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\SequenceProperty.cs" Link="PDIProperties\SequenceProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\SortStringProperty.cs" Link="PDIProperties\SortStringProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\SoundProperty.cs" Link="PDIProperties\SoundProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\SpecificationVersions.cs" Link="PDIProperties\SpecificationVersions.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\StartDateProperty.cs" Link="PDIProperties\StartDateProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\StatusProperty.cs" Link="PDIProperties\StatusProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\StatusValue.cs" Link="PDIProperties\StatusValue.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\SummaryProperty.cs" Link="PDIProperties\SummaryProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TelephoneProperty.cs" Link="PDIProperties\TelephoneProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TelephonePropertyCollection.cs" Link="PDIProperties\TelephonePropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TimeStampProperty.cs" Link="PDIProperties\TimeStampProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TimeTransparencyProperty.cs" Link="PDIProperties\TimeTransparencyProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TimeZoneIdChangedEventArgs.cs" Link="PDIProperties\TimeZoneIdChangedEventArgs.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TimeZoneIdProperty.cs" Link="PDIProperties\TimeZoneIdProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TimeZoneNameProperty.cs" Link="PDIProperties\TimeZoneNameProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TimeZoneNamePropertyCollection.cs" Link="PDIProperties\TimeZoneNamePropertyCollection.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TimeZoneOffsetProperty.cs" Link="PDIProperties\TimeZoneOffsetProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TimeZoneProperty.cs" Link="PDIProperties\TimeZoneProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TimeZoneUrlProperty.cs" Link="PDIProperties\TimeZoneUrlProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TitleProperty.cs" Link="PDIProperties\TitleProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\TriggerProperty.cs" Link="PDIProperties\TriggerProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\UniqueIdProperty.cs" Link="PDIProperties\UniqueIdProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\UrlProperty.cs" Link="PDIProperties\UrlProperty.cs" />
+    <Compile Include="..\EWSPDIData\PDIProperties\ValLocValue.cs" Link="PDIProperties\ValLocValue.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\EWSPDIData\Data.PDIData.resx" Link="Data.PDIData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PDIObjects\" />
+    <Folder Include="PDIParser\" />
+    <Folder Include="Binding\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PDI.NetCore\PDI.NetCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Data.PDIData.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

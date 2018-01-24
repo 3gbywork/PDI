@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\EWSPDI\DailyFrequency.cs" Link="DailyFrequency.cs" />
+    <Compile Include="..\EWSPDI\DateTimeCollection.cs" Link="DateTimeCollection.cs" />
+    <Compile Include="..\EWSPDI\DateUtils.cs" Link="DateUtils.cs" />
+    <Compile Include="..\EWSPDI\DayInstance.cs" Link="DayInstance.cs" />
+    <Compile Include="..\EWSPDI\DayInstanceCollection.cs" Link="DayInstanceCollection.cs" />
+    <Compile Include="..\EWSPDI\DayOccurrence.cs" Link="DayOccurrence.cs" />
+    <Compile Include="..\EWSPDI\DaysOfWeek.cs" Link="DaysOfWeek.cs" />
+    <Compile Include="..\EWSPDI\Duration.cs" Link="Duration.cs" />
+    <Compile Include="..\EWSPDI\EasterMethod.cs" Link="EasterMethod.cs" />
+    <Compile Include="..\EWSPDI\Expand.cs" Link="Expand.cs" />
+    <Compile Include="..\EWSPDI\Filter.cs" Link="Filter.cs" />
+    <Compile Include="..\EWSPDI\FixedHoliday.cs" Link="FixedHoliday.cs" />
+    <Compile Include="..\EWSPDI\FloatingHoliday.cs" Link="FloatingHoliday.cs" />
+    <Compile Include="..\EWSPDI\GlobalSuppressions.cs" Link="GlobalSuppressions.cs" />
+    <Compile Include="..\EWSPDI\Holiday.cs" Link="Holiday.cs" />
+    <Compile Include="..\EWSPDI\HolidayCollection.cs" Link="HolidayCollection.cs" />
+    <Compile Include="..\EWSPDI\HourlyFrequency.cs" Link="HourlyFrequency.cs" />
+    <Compile Include="..\EWSPDI\IFrequencyRules.cs" Link="IFrequencyRules.cs" />
+    <Compile Include="..\EWSPDI\ISO8601Format.cs" Link="ISO8601Format.cs" />
+    <Compile Include="..\EWSPDI\ListItem.cs" Link="ListItem.cs" />
+    <Compile Include="..\EWSPDI\LocalizedResources.cs" Link="LocalizedResources.cs" />
+    <Compile Include="..\EWSPDI\LRDescriptionAttribute.cs" Link="LRDescriptionAttribute.cs" />
+    <Compile Include="..\EWSPDI\MinutelyFrequency.cs" Link="MinutelyFrequency.cs" />
+    <Compile Include="..\EWSPDI\MonthlyFrequency.cs" Link="MonthlyFrequency.cs" />
+    <Compile Include="..\EWSPDI\Period.cs" Link="Period.cs" />
+    <Compile Include="..\EWSPDI\PeriodCollection.cs" Link="PeriodCollection.cs" />
+    <Compile Include="..\EWSPDI\RecurDateTime.cs" Link="RecurDateTime.cs" />
+    <Compile Include="..\EWSPDI\RecurDateTimeCollection.cs" Link="RecurDateTimeCollection.cs" />
+    <Compile Include="..\EWSPDI\RecurFrequency.cs" Link="RecurFrequency.cs" />
+    <Compile Include="..\EWSPDI\RecurOptsDataSource.cs" Link="RecurOptsDataSource.cs" />
+    <Compile Include="..\EWSPDI\Recurrence.cs" Link="Recurrence.cs" />
+    <Compile Include="..\EWSPDI\RecurrenceEnumerator.cs" Link="RecurrenceEnumerator.cs" />
+    <Compile Include="..\EWSPDI\SecondlyFrequency.cs" Link="SecondlyFrequency.cs" />
+    <Compile Include="..\EWSPDI\StringCollection.cs" Link="StringCollection.cs" />
+    <Compile Include="..\EWSPDI\UniqueIntegerCollection.cs" Link="UniqueIntegerCollection.cs" />
+    <Compile Include="..\EWSPDI\WeeklyFrequency.cs" Link="WeeklyFrequency.cs" />
+    <Compile Include="..\EWSPDI\YearlyFrequency.cs" Link="YearlyFrequency.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\EWSPDI\PDI.resx" Link="PDI.resx" />
+  </ItemGroup>
+
+</Project>

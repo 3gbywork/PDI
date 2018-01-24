@@ -1,0 +1,98 @@
+﻿@model IEnumerable<PDI.NetCoreDemos.Models.VCardDto>
+
+@{
+    ViewData["Title"] = "vCard Demo";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    This page is used to demonstrate the parsing and display of vCard files. A small file is provided by default. You may upload another file of your choosing. Upload size is restricted to a maximum of 1MB in this demo.
+</p>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form method="post" enctype="multipart/form-data" asp-controller="VCardDtoes" asp-action="UploadFiles">
+    <div class="form-group">
+        <div class="col-md-6">
+            <p>File Encoding:</p>
+            <select class="form-control" name="fileEncoding">
+                <option value="utf-8">Unicode (UTF-8)</option>
+                <option value="iso-8859-1">Western European (Windows)</option>
+                <option value="ascii">ASCII</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <p>Property Encoding:</p>
+            <select class="form-control" name="propEncoding">
+                <option value="utf-8">Unicode (UTF-8)</option>
+                <option value="iso-8859-1">Western European (Windows)</option>
+                <option value="ascii">ASCII</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Upload vCard file:</p>
+            <input type="file" name="files"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="Upload" />
+        </div>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Version)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SortableName)
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.JobTitle)*@
+                Title
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Organization)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastRevision)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Version)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SortableName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JobTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Organization)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastRevision)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
