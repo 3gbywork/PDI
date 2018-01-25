@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "references", "references", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDI.NetCore", "..\..\Source\PDI.NetCore\PDI.NetCore.csproj", "{CEC69160-75E8-4072-A1A6-1E5F99913242}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDI.NetCore.Data", "..\..\Source\PDIData.NetCore\PDI.NetCore.Data.csproj", "{ABFCF875-11CD-43CD-8A81-6E2D50336B90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDI.NetCore.Data", "..\..\Source\PDI.NetCore.Data\PDI.NetCore.Data.csproj", "{ABFCF875-11CD-43CD-8A81-6E2D50336B90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

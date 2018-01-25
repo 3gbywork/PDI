@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Source\PDI.NetCore\PDI.NetCore.csproj" />
-    <ProjectReference Include="..\..\..\Source\PDIData.NetCore\PDI.NetCore.Data.csproj" />
+    <ProjectReference Include="..\..\..\Source\PDI.NetCore.Data\PDI.NetCore.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>
